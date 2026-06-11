@@ -348,13 +348,6 @@ class Cash extends Pembayaran
         font-size: 17px;
         text-align: center;
     }
-
-    @media (max-width: 500px) {
-        form,
-        .struk {
-            width: 100%;
-        }
-    }
 </style>
 </head>
 
