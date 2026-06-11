@@ -239,54 +239,123 @@ class Cash extends Pembayaran
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        form {
-            display: inline-block;
-            text-align: left;
-        }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f4f7fb;
+        min-height: 100vh;
+        padding: 30px 15px;
+        color: #333;
+    }
 
-        input,
-        select {
-            width: 300px;
-            padding: 5px;
-        }
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #0d6efd;
+        font-weight: 700;
+    }
 
-        button {
-            width: 100%;
-            background-color: #00ffee;
-            padding: 8px;
-        }
+    form {
+        display: block;
+        max-width: 450px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
 
-        button:hover {
-            background-color: #188495;
-        }
+    label {
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: block;
+        color: #444;
+    }
 
-        hr {
-            margin: 20px 0;
-        }
+    input,
+    select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #dcdcdc;
+        border-radius: 10px;
+        font-size: 14px;
+        transition: 0.3s;
+        outline: none;
+    }
 
-        h3 {
-            margin-top: 20px;
-        }
+    input:focus,
+    select:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+    }
 
+    button {
+        width: 100%;
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        background: #0d6efd;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #0b5ed7;
+        transform: translateY(-2px);
+    }
+
+    hr {
+        border: none;
+        height: 1px;
+        background: #ddd;
+        margin: 35px auto;
+        max-width: 500px;
+    }
+
+    .struk {
+        max-width: 450px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        line-height: 1.9;
+        border-top: 5px solid #0d6efd;
+    }
+
+    .struk h3 {
+        text-align: center;
+        color: #0d6efd;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .struk b {
+        display: block;
+        margin-top: 10px;
+        padding: 12px;
+        background: #eaf3ff;
+        border-radius: 8px;
+        color: #0d6efd;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    @media (max-width: 500px) {
+        form,
         .struk {
-            width: 350px;
-            margin: 20px auto;
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            text-align: left;
-            background-color: #f9f9f9;
+            width: 100%;
         }
-
-        .struk b {
-            color: #0d6efd;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
